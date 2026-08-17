@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+pos.db
+
+# Node
+node_modules/
+.next/
+.env.local
+
+# Docker
+**/.dockerignore
+
+# VSCode
+.vscode/
+backend/.env.example
+frontend/tsconfig.json

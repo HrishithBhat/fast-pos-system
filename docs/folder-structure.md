@@ -1,0 +1,106 @@
+# Folder Structure (Planned)
+
+```
+POS/
+  backend/
+    app/
+      main.py
+      api/
+        auth.py
+        products.py
+        orders.py
+        payments.py
+        reports.py
+        inventory.py
+        settings.py
+        kds_ws.py
+      core/
+        config.py
+        security.py
+        deps.py
+      models/
+        base.py
+        tenant.py
+        user.py
+        category.py
+        product.py
+        order.py
+        payment.py
+        receipt.py
+        inventory.py
+      schemas/
+        auth.py
+        product.py
+        order.py
+        payment.py
+        report.py
+        settings.py
+      services/
+        pricing.py
+        payments/
+          base.py
+          cash.py
+          stripe.py
+          razorpay.py
+        receipts.py
+        kds.py
+      repositories/
+        base.py
+        product_repo.py
+        order_repo.py
+        user_repo.py
+        settings_repo.py
+      migrations/
+        alembic.ini
+        versions/
+    tests/
+      test_auth.py
+      test_orders.py
+    Dockerfile
+    requirements.txt
+    .env.example
+
+  frontend/
+    src/
+      pages/
+        index.tsx
+        pos.tsx
+        admin/
+          index.tsx
+        kds.tsx
+      components/
+        POS/
+          ProductGrid.tsx
+          Cart.tsx
+          Checkout.tsx
+        Admin/
+          ProductForm.tsx
+          SettingsForm.tsx
+        KDS/
+          OrderFeed.tsx
+      lib/
+        api.ts
+        auth.ts
+    public/
+    styles/
+      globals.css
+    Dockerfile
+    package.json
+    tailwind.config.js
+    postcss.config.js
+    next.config.js
+    .env.local.example
+
+  infra/
+    docker-compose.yml
+    README.md
+
+  docs/
+    architecture.md
+    database-schema.md
+    api-design.md
+    folder-structure.md
+
+  .gitignore
+  README.md
+```
